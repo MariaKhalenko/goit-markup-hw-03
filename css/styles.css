@@ -19,7 +19,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-
 p,
 h1,
 h2,
@@ -35,6 +34,19 @@ img {
     max-width: 100%;
     height: auto;
 }
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
 .container {
     width: 1158px;
     padding: 0 15px;
@@ -173,6 +185,7 @@ img {
     letter-spacing: 0.02em;
     width: 496px;
     text-align: center;
+    max-width: 496px;
      }
 .order-button {
     background: #4D5AE5;
@@ -204,10 +217,7 @@ img {
 .section-order {
     padding: 120px 0;
     }
-    h2 {
-        visually: hidden;
-    }
-.feature-list {
+  .feature-list {
     display: flex;
     gap: 24px;
 }
@@ -284,7 +294,8 @@ img {
     text-align: center;
     }
 .portfolio {
-    padding: 120px 0 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
     width: 1128px;
     height: 987px;
     flex-shrink: 0;
