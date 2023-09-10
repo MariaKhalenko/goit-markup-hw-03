@@ -35,17 +35,8 @@ img {
     height: auto;
 }
 .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-    }
+    visibility: hidden;
+}
 
 .container {
     width: 1158px;
@@ -294,8 +285,7 @@ img {
     text-align: center;
     }
 .portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0 120px 0;
     width: 1128px;
     height: 987px;
     flex-shrink: 0;
