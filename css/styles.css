@@ -16,8 +16,40 @@ body {
  }
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    }
+    .section {
+    padding: 120px 0;
+    }
+    .logo-full {
+    margin: 24px 1169px 24px 156px;
+    display: inline-flex;
+    height: 24px;
+    align-items: center;
+    flex-shrink: 0;
+    }
 .logo {
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
@@ -26,7 +58,7 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-  }
+     }
 .logo-studio {
     color: #2e2f42;
     font-family: "Raleway",
@@ -36,13 +68,18 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    }
+     }
 .nav-link {
     color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin: 24px 832px 24px 347px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+    
     }
 .nav-link:active {
     color: #404BBF;
@@ -56,7 +93,7 @@ ul {
 .info-adress {
     font-style: normal;
         }
-.info {
+.info-mail.info-tel {
     color: #434455;
     font-size: 16px;
     font-weight: 400;
@@ -64,13 +101,26 @@ ul {
     letter-spacing: 0.02em;
     line-height: 1.5;
 }
-.info:active {
+.info-mail {
+margin: 24px 940px 24px 347px;
+width: 1440px;
+    height: 72px;
+    flex-shrink: 0;
+}
+.info-tel {
+margin: 24px 1133px 24px 156px;
+width: 1440px;
+    height: 72px;
+    flex-shrink: 0;
+}
+
+.info-mail.info-tel:active {
     color: #404BBF;
 }
-.info:hover {
+.info-mail.info-tel:hover {
     color: #404bbf;
 }
-.info:focus {
+.info-mail.info-tel:focus {
     color: #404bbf;
 }
 
@@ -79,6 +129,10 @@ ul {
     flex-shrink: 0;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    margin: 72px 220px 2628px 220px;
+    width: 1440px;
+    height: 600px;
+    flex-shrink: 0;
     }
 .order-title-section {
     color: #FFF;
@@ -87,6 +141,9 @@ ul {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    width: 496px;
+    text-align: center;
+    margin: 188px 472px 292px 472px;
     }
 .order-button {
     background: #4D5AE5;
@@ -97,12 +154,28 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    margin: 48px 635px 188px 636px;
+    padding: 16px 32px;
+    display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .order-button:hover {
     background: #404BBF;
 }
 .order-button:focus{
-background-color: #404BBF
+    background-color: #404BBF
+}
+.feature {
+    display: flex;
+    width: 264px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 224px 1020px 120px 156px;
 }
 .order-title {
     color: #2E2F42;
@@ -123,6 +196,11 @@ background-color: #404BBF
 }
 .team-list {
     background-color: #FFFFFF;
+    margin: 232px 1020px 120px 156px;
+    width: 1440px;
+    height: 732px;
+    flex-shrink: 0;
+
 }
 .team-title {
     color: #2E2F42;
@@ -139,6 +217,12 @@ background-color: #404BBF
     font-weight: 500;
     letter-spacing: 0.02em;
     line-height: 1.2;
+    display: flex;
+    width: 232px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 .team-speciality {
     color: #434455;
@@ -147,11 +231,17 @@ background-color: #404BBF
     line-height: 1.5;
     letter-spacing: 0.02em;
     }
+.portfolio {
+    width: 1128px;
+    height: 987px;
+    flex-shrink: 0;
+    margin: 133px 156px 120px 156px;
+    }
+    }
 .title-portfolio {
     color: #2E2F42;
     font-size: 36px;
     font-weight: 700;
-    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     line-height: 1.11;
@@ -179,6 +269,7 @@ color: #434455;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     line-height: 1.17;
+    margin: 100px 1169px 16px 156px;
     }
     .logo-studio-footer {
        color: #F4F4FD;
@@ -186,10 +277,14 @@ color: #434455;
 .footer {
     background-color: #2E2F42;
     font-weight: 400;
+    width: 1440px;
+    height: 312px;
+    flex-shrink: 0;
     }
 .text-footer {
     color: #F4F4FD;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin: 140px 1020px 100px 156px;
 }
